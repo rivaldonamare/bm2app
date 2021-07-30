@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "723231029790",
+    "project_id": "bm2ecommerce",
+    "storage_bucket": "bm2ecommerce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723231029790:android:0d9e87960289e9bc678c0f",
+        "android_client_info": {
+          "package_name": "tedorentcar.bm2elektrik_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723231029790-1rdq2g2b9v2pjo34audbidt9fh9hsont.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkgZOfr3NUsjcNz61eXOzJc5oqcypAhSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723231029790-1rdq2g2b9v2pjo34audbidt9fh9hsont.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
