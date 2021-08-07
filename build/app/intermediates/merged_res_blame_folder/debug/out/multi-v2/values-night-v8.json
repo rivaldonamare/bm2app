@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\ALDO\\Penulisan_Ilmiah\\aplikasi PI\\AndroidStudioProjects\\BM2 ELEKTRIK\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "C:\\Users\\rival\\StudioProjects\\bm2app\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "D:\\ALDO\\Penulisan_Ilmiah\\aplikasi PI\\AndroidStudioProjects\\BM2 ELEKTRIK\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "C:\\Users\\rival\\StudioProjects\\bm2app\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

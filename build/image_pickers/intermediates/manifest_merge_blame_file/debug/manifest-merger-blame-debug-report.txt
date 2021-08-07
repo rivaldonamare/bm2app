@@ -1,0 +1,79 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.leeson.image_pickers" >
+4
+5    <uses-sdk android:minSdkVersion="19" />
+5-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml
+6
+7    <uses-permission android:name="android.permission.CAMERA" />
+7-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:3:5-65
+7-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:3:22-62
+8    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+8-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:4:5-71
+8-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:4:22-68
+9    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+9-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:5:5-80
+9-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:5:22-77
+10    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+10-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:6:5-81
+10-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:6:22-78
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:7:5-67
+11-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:7:22-64
+12
+13    <application
+13-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:9:5-29:19
+14        android:networkSecurityConfig="@xml/net_sec"
+14-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:10:9-53
+15        android:requestLegacyExternalStorage="true" >
+15-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:11:9-52
+16
+17        <!-- 适配9.0的系统 -->
+18        <uses-library
+18-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:13:9-88
+19            android:name="org.apache.http.legacy"
+19-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:13:23-60
+20            android:required="false" />
+20-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:13:61-85
+21        <!-- 适配9.0的系统 -->
+22        <activity
+22-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:15:9-99
+23            android:name="com.leeson.image_pickers.activitys.PermissionActivity"
+23-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:15:19-63
+24            android:theme="@style/TransTheme" />
+24-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:15:64-97
+25        <activity
+25-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:16:9-99
+26            android:name="com.leeson.image_pickers.activitys.SelectPicsActivity"
+26-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:16:19-63
+27            android:theme="@style/TransTheme" />
+27-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:16:64-97
+28        <activity
+28-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:17:9-130
+29            android:name="com.leeson.image_pickers.activitys.PhotosActivity"
+29-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:17:19-59
+30            android:screenOrientation="portrait"
+30-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:17:60-96
+31            android:theme="@style/AppTheme" />
+31-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:17:97-128
+32        <activity
+32-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:18:9-139
+33            android:name="com.leeson.image_pickers.activitys.VideoActivity"
+33-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:18:19-58
+34            android:configChanges="orientation|screenSize"
+34-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:18:59-105
+35            android:theme="@style/AppTheme" />
+35-->C:\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\image_pickers-1.1.0\android\src\main\AndroidManifest.xml:18:106-137
+36
+37        <!-- <provider -->
+38        <!-- android:name=".provides.MyProvide" -->
+39        <!-- android:authorities="com.leeson.pickers.fileprovider" -->
+40        <!-- android:exported="false" -->
+41        <!-- android:grantUriPermissions="true"> -->
+42        <!-- <meta-data -->
+43        <!-- android:name="android.support.FILE_PROVIDER_PATHS" -->
+44        <!-- android:resource="@xml/pickers_plugin_file_path" /> -->
+45        <!-- </provider> -->
+46    </application>
+47
+48</manifest>

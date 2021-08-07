@@ -195,7 +195,7 @@ class _ProductPageState extends State<ProductPage> {
             }
           ),
           CustomActionBar(
-            hasTitle: false,
+            title: "                                                   ",
             hasBackArrow:true,
             hasBackground: true,
           )

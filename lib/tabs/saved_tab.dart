@@ -145,7 +145,7 @@ class SavedTab extends StatelessWidget {
             },
           ),
           CustomActionBar(
-            title: "Saved Product",
+            title: "Saved Product                               ",
             hasBackArrow: false,
           ),
         ],

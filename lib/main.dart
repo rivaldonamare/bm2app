@@ -1,4 +1,4 @@
-giimport 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:bm2elektrik_app/screens/Landing_Page.dart';
 

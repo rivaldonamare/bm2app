@@ -1,4 +1,6 @@
+import 'package:bm2elektrik_app/roles/admin_home.dart';
 import 'package:bm2elektrik_app/screens/constants.dart';
+import 'package:bm2elektrik_app/screens/verification_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -40,7 +42,7 @@ class LandingPage extends StatelessWidget {
                   User _user = streamSnapshot.data;
                   if(_user == null) {
                     return LoginPage();
-                  } else{
+                  } else {
                     return HomePage();
                   }
                 }
