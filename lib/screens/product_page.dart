@@ -71,7 +71,7 @@ class _ProductPageState extends State<ProductPage> {
                   ),
                   children: [
                     Image.network(
-                        "${documentData['image'][0]}"
+                        "${documentData['image']}"
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(
@@ -195,7 +195,7 @@ class _ProductPageState extends State<ProductPage> {
             }
           ),
           CustomActionBar(
-            title: "                                                   ",
+            title: "                                                ",
             hasBackArrow:true,
             hasBackground: true,
           )

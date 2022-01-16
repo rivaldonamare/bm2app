@@ -81,7 +81,7 @@ class _CartPageState extends State<CartPage> {
                                         borderRadius:
                                         BorderRadius.circular(10.0),
                                         child: Image.network(
-                                          "${_productMap['image'][0]}",
+                                          "${_productMap['image']}",
                                           fit: BoxFit.cover,
                                         ),
                                       ),

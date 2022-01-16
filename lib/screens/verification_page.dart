@@ -114,7 +114,7 @@ class _VerificationPageState extends State<VerificationPage> {
 
               LaunchButton('Upload Bukti Transfer', () async {
                 await openUrl(
-                    'https://drive.google.com/drive/folders/1iRFrv6Zxz3nEGI3lQwtBHP5scBem94sR?usp=sharing');
+                    'https://api.whatsapp.com/send?phone=628118258488');
               }),
               Container(
                 width: 50.0,
@@ -154,7 +154,7 @@ class _VerificationPageState extends State<VerificationPage> {
                                             "Bukti Transfer": buktiTransfer.text,
                                             "Nama Pengirim": namapengirim.text
                                           };
-                                          _firebaseServices.usersRef
+                                          _firebaseServices.buktiPembayaran
                                               .doc(
                                                   _firebaseServices.getUserId())
                                               .collection("Verification")

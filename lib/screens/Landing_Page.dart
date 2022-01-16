@@ -1,5 +1,6 @@
 import 'package:bm2elektrik_app/roles/admin_home.dart';
 import 'package:bm2elektrik_app/screens/constants.dart';
+import 'package:bm2elektrik_app/screens/total_pay.dart';
 import 'package:bm2elektrik_app/screens/verification_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +16,7 @@ class LandingPage extends StatelessWidget {
     return FutureBuilder(
         future: _initialization,
         builder: (context, snapshot) {
-          if(snapshot.hasError) {
+          if (snapshot.hasError) {
             return Scaffold(
               body: Center(
                 child: Text("Error: ${snapshot.error}"),
@@ -24,8 +25,7 @@ class LandingPage extends StatelessWidget {
           }
 
           //connection intiallized - firebase app is running
-          if(snapshot.connectionState == ConnectionState.done) {
-
+          if (snapshot.connectionState == ConnectionState.done) {
             //streambuilder can check the login state live
             return StreamBuilder(
               stream: FirebaseAuth.instance.authStateChanges(),
@@ -38,9 +38,9 @@ class LandingPage extends StatelessWidget {
                   );
                 }
 
-                if(streamSnapshot.connectionState == ConnectionState.active) {
+                if (streamSnapshot.connectionState == ConnectionState.active) {
                   User _user = streamSnapshot.data;
-                  if(_user == null) {
+                  if (_user == null) {
                     return LoginPage();
                   } else {
                     return HomePage();
@@ -49,8 +49,9 @@ class LandingPage extends StatelessWidget {
 
                 return Scaffold(
                   body: Center(
-                    child: Text(""
-                        "Checking Authentication....",
+                    child: Text(
+                      ""
+                      "Checking Authentication....",
                       style: Constants.regularHeading,
                     ),
                   ),
@@ -62,14 +63,10 @@ class LandingPage extends StatelessWidget {
           return Scaffold(
             body: Center(
                 child: Text(
-                  "Initialization App....",
-                  style: Constants.regularHeading,
-                )
-            ),
+              "Initialization App....",
+              style: Constants.regularHeading,
+            )),
           );
-        }
-    );
+        });
   }
 }
-
-

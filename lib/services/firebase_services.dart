@@ -17,14 +17,17 @@ class FirebaseServices {
       FirebaseFirestore.instance.collection("Users");
 
   final CollectionReference dataPengiriman =
-      FirebaseFirestore.instance.collection("Data Pengiriman");
+      FirebaseFirestore.instance.collection("Address");
 
   final CollectionReference buktiPembayaran =
-      FirebaseFirestore.instance.collection("Bukti Pembayaran");
+      FirebaseFirestore.instance.collection("Verification");
 
-   final CollectionReference inputdata =
-    FirebaseFirestore.instance.collection("produk");
+    final CollectionReference inputdata =
+      FirebaseFirestore.instance.collection("produk");
+
+    
   
+    
 
 
   }

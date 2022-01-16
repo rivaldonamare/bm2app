@@ -70,7 +70,7 @@ class SavedTab extends StatelessWidget {
                                         borderRadius:
                                         BorderRadius.circular(8.0),
                                         child: Image.network(
-                                          "${_productMap['image'][0]}",
+                                          "${_productMap['image']}",
                                           fit: BoxFit.cover,
                                         ),
                                       ),

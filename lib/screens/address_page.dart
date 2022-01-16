@@ -1,18 +1,17 @@
 import 'package:bm2elektrik_app/screens/payment_method.dart';
 import 'package:bm2elektrik_app/services/firebase_services.dart';
+import 'package:bm2elektrik_app/widgets/custom_action_bar.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 class AddressPage extends StatefulWidget {
-
-
   @override
   _AddressPageState createState() => _AddressPageState();
 }
 
 class _AddressPageState extends State<AddressPage> {
   final CollectionReference dataPengiriman =
-  FirebaseFirestore.instance.collection("Users");
+      FirebaseFirestore.instance.collection("Address");
 
   FirebaseServices _firebaseServices = FirebaseServices();
 
@@ -26,11 +25,12 @@ class _AddressPageState extends State<AddressPage> {
   TextEditingController jumlahBarang = new TextEditingController();
   TextEditingController catatan = new TextEditingController();
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Masukan Data Pengiriman'),),
+      appBar: AppBar(
+        title: Text('Masukan Data Pengiriman'),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(12.0),
         child: Form(
@@ -41,22 +41,23 @@ class _AddressPageState extends State<AddressPage> {
               bottom: 12.0,
             ),
             children: [
-              Padding(padding: const EdgeInsets.symmetric(
-                vertical: 12.0,
-                horizontal: 8.0,
-              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  vertical: 12.0,
+                  horizontal: 8.0,
+                ),
                 child: Row(
-                  mainAxisAlignment:
-                  MainAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Container(
                       width: 370,
                       height: 50,
                       child: TextFormField(
                         controller: namaLengkap,
-                        decoration: InputDecoration(hintText: 'Nama Lengkap Pemesan'),
-                        validator: (value){
-                          if(value.trim().isEmpty){
+                        decoration:
+                            InputDecoration(hintText: 'Nama Lengkap Pemesan'),
+                        validator: (value) {
+                          if (value.trim().isEmpty) {
                             return 'Nama Lengkap is Required';
                           }
                         },
@@ -65,13 +66,13 @@ class _AddressPageState extends State<AddressPage> {
                   ],
                 ),
               ),
-              Padding(padding: const EdgeInsets.symmetric(
-                vertical: 12.0,
-                horizontal: 8.0,
-              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  vertical: 12.0,
+                  horizontal: 8.0,
+                ),
                 child: Row(
-                  mainAxisAlignment:
-                  MainAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Container(
                       width: 370,
@@ -79,8 +80,8 @@ class _AddressPageState extends State<AddressPage> {
                       child: TextFormField(
                         controller: email,
                         decoration: InputDecoration(hintText: 'Email'),
-                        validator: (value){
-                          if(value.trim().isEmpty){
+                        validator: (value) {
+                          if (value.trim().isEmpty) {
                             return 'Email is Required';
                           }
                         },
@@ -89,13 +90,13 @@ class _AddressPageState extends State<AddressPage> {
                   ],
                 ),
               ),
-              Padding(padding: const EdgeInsets.symmetric(
-                vertical: 12.0,
-                horizontal: 8.0,
-              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  vertical: 12.0,
+                  horizontal: 8.0,
+                ),
                 child: Row(
-                  mainAxisAlignment:
-                  MainAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Container(
                       width: 370,
@@ -103,8 +104,8 @@ class _AddressPageState extends State<AddressPage> {
                       child: TextFormField(
                         controller: noTelp,
                         decoration: InputDecoration(hintText: 'No. Telp'),
-                        validator: (value){
-                          if(value.trim().isEmpty){
+                        validator: (value) {
+                          if (value.trim().isEmpty) {
                             return 'No. Telp is Required';
                           }
                         },
@@ -113,13 +114,13 @@ class _AddressPageState extends State<AddressPage> {
                   ],
                 ),
               ),
-              Padding(padding: const EdgeInsets.symmetric(
-                vertical: 12.0,
-                horizontal: 8.0,
-              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  vertical: 12.0,
+                  horizontal: 8.0,
+                ),
                 child: Row(
-                  mainAxisAlignment:
-                  MainAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
@@ -128,8 +129,8 @@ class _AddressPageState extends State<AddressPage> {
                       child: TextFormField(
                         controller: alamat,
                         decoration: InputDecoration(hintText: 'Alamat'),
-                        validator: (value){
-                          if(value.trim().isEmpty){
+                        validator: (value) {
+                          if (value.trim().isEmpty) {
                             return 'Alamat is Required';
                           }
                         },
@@ -138,13 +139,13 @@ class _AddressPageState extends State<AddressPage> {
                   ],
                 ),
               ),
-              Padding(padding: const EdgeInsets.symmetric(
-                vertical: 12.0,
-                horizontal: 8.0,
-              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  vertical: 12.0,
+                  horizontal: 8.0,
+                ),
                 child: Row(
-                  mainAxisAlignment:
-                  MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
                       width: 150,
@@ -152,8 +153,8 @@ class _AddressPageState extends State<AddressPage> {
                       child: TextFormField(
                         controller: kota,
                         decoration: InputDecoration(hintText: 'Kota'),
-                        validator: (value){
-                          if(value.trim().isEmpty){
+                        validator: (value) {
+                          if (value.trim().isEmpty) {
                             return 'Kota is Required';
                           }
                         },
@@ -165,8 +166,8 @@ class _AddressPageState extends State<AddressPage> {
                       child: TextFormField(
                         controller: kodePos,
                         decoration: InputDecoration(hintText: 'Kode Pos'),
-                        validator: (value){
-                          if(value.trim().isEmpty){
+                        validator: (value) {
+                          if (value.trim().isEmpty) {
                             return 'Kode pos is Required';
                           }
                         },
@@ -175,13 +176,13 @@ class _AddressPageState extends State<AddressPage> {
                   ],
                 ),
               ),
-              Padding(padding: const EdgeInsets.symmetric(
-                vertical: 12.0,
-                horizontal: 8.0,
-              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  vertical: 12.0,
+                  horizontal: 8.0,
+                ),
                 child: Row(
-                  mainAxisAlignment:
-                  MainAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Container(
                       width: 370,
@@ -189,8 +190,8 @@ class _AddressPageState extends State<AddressPage> {
                       child: TextFormField(
                         controller: jumlahBarang,
                         decoration: InputDecoration(hintText: 'Jumlah Barang'),
-                        validator: (value){
-                          if(value.trim().isEmpty){
+                        validator: (value) {
+                          if (value.trim().isEmpty) {
                             return 'Jumlah is Required';
                           }
                         },
@@ -199,13 +200,13 @@ class _AddressPageState extends State<AddressPage> {
                   ],
                 ),
               ),
-              Padding(padding: const EdgeInsets.symmetric(
-                vertical: 12.0,
-                horizontal: 8.0,
-              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  vertical: 12.0,
+                  horizontal: 8.0,
+                ),
                 child: Row(
-                  mainAxisAlignment:
-                  MainAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Container(
                       width: 370,
@@ -213,8 +214,8 @@ class _AddressPageState extends State<AddressPage> {
                       child: TextFormField(
                         controller: catatan,
                         decoration: InputDecoration(hintText: 'Catatan'),
-                        validator: (value){
-                          if(value.trim().isEmpty){
+                        validator: (value) {
+                          if (value.trim().isEmpty) {
                             return 'Catatan is Required';
                           }
                         },
@@ -227,29 +228,31 @@ class _AddressPageState extends State<AddressPage> {
                 width: 80.0,
                 height: 10.0,
               ),
-              RaisedButton(onPressed: (){
-                Map <String,dynamic> data= {
-                  "Nama Lengkap":namaLengkap.text,
-                  "Email": email.text,
-                  "No.Telp":noTelp.text,
-                  "Alamat":alamat.text,
-                  "Kota":kota.text,
-                  "Kode Pos":kodePos.text,
-                  "Jumlah Barang":jumlahBarang.text,
-                  "Catatan":catatan.text
-                };
-                _firebaseServices.usersRef.doc(_firebaseServices.getUserId())
-                .collection("Address").add(data);
-                if(formKey.currentState.validate()) {
-                  print('The Form is Valid');
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => PaymentMethod()
-                    ),
-                  );
-                }
-              },
+              RaisedButton(
+                onPressed: () {
+                  Map<String, dynamic> data = {
+                    "Nama Lengkap": namaLengkap.text,
+                    "Email": email.text,
+                    "No.Telp": noTelp.text,
+                    "Alamat": alamat.text,
+                    "Kota": kota.text,
+                    "Kode Pos": kodePos.text,
+                    "Jumlah Barang": jumlahBarang.text,
+                    "Catatan": catatan.text
+                  };
+                  _firebaseServices.dataPengiriman
+                      .doc(_firebaseServices.getUserId())
+                      .collection("Address")
+                      .add(data);
+                  if (formKey.currentState.validate()) {
+                    print('The Form is Valid');
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => PaymentMethod()),
+                    );
+                  }
+                
+                },
                 child: Text('submit'),
               ),
             ],
@@ -257,6 +260,5 @@ class _AddressPageState extends State<AddressPage> {
         ),
       ),
     );
-
   }
 }

@@ -45,7 +45,7 @@ class CustomActionBar extends StatelessWidget {
       padding: EdgeInsets.only(
         top: 45.0,
         left: 24.0,
-        right: 24.0,
+        right: 28.0,
         bottom: 45.0,
       ),
       child: Row(
@@ -129,3 +129,5 @@ class CustomActionBar extends StatelessWidget {
     );
   }
 }
+
+

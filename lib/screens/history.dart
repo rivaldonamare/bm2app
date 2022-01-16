@@ -15,7 +15,7 @@ class HistoryPage extends StatefulWidget {
 
 class _HistoryPageState extends State<HistoryPage> {
   final CollectionReference _productsRef =
-  FirebaseFirestore.instance.collection("Users");
+  FirebaseFirestore.instance.collection("cart");
 
   FirebaseServices _firebaseServices = FirebaseServices();
 
@@ -81,7 +81,7 @@ class _HistoryPageState extends State<HistoryPage> {
                                         borderRadius:
                                         BorderRadius.circular(10.0),
                                         child: Image.network(
-                                          "${_productMap['image'][0]}",
+                                          "${_productMap['image']}",
                                           fit: BoxFit.cover,
                                         ),
                                       ),
